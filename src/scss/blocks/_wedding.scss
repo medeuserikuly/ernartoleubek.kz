@@ -1,0 +1,114 @@
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    gap: 20px;
+    grid-template-rows: auto;
+
+    &__wrapper {
+        transform-style: preserve-3d;
+        transform: perspective(100rem);
+        cursor: pointer;
+    }
+
+    &__item {
+        --rX: 0;
+        --rY: 0;
+        --bX: 50%;
+        --bY: 80%;
+
+        width: 370px;
+        height: 210px;
+        border-radius: 2px;
+        transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+        box-shadow: 0 0 50px 8px hsla(0, 0%, 0%, .2);
+        transition: transform .6s 1s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: url("@img/icons/play.svg") center center/cover no-repeat;
+        }
+
+        &-1 {
+            background: url("@img/wedding/wedding_1.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+
+            &_love {
+                background: url("@img/love/love_1.jpg") var(--bX) var(--bY);
+            }
+            &_commercial {
+                background: url("@img/commercial/commercial_1.jpg") var(--bX) var(--bY);
+            }
+        }
+
+        &-2 {
+            background: url("@img/wedding/wedding_2.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+            &_love {
+                background: url("@img/love/love_2.jpg") var(--bX) var(--bY);
+            }
+            &_commercial {
+                background: url("@img/commercial/commercial_2.jpg") var(--bX) var(--bY);
+            }
+        }
+
+        &-3 {
+            background: url("@img/wedding/wedding_3.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+            &_love {
+                background: url("@img/love/love_3.jpg") var(--bX) var(--bY);
+            }
+            &_commercial {
+                background: url("@img/commercial/commercial_3.jpg") var(--bX) var(--bY);
+            }
+        }
+
+        &-4 {
+            background: url("@img/wedding/wedding_4.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+            &_love {
+                background: url("@img/love/love_4.jpg") var(--bX) var(--bY);
+            }
+            &_commercial {
+                background: url("@img/commercial/commercial_4.jpg") var(--bX) var(--bY);
+            }
+        }
+
+        &-5 {
+            background: url("@img/wedding/wedding_5.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+            &_commercial {
+                background: url("@img/commercial/commercial_5.jpg") var(--bX) var(--bY);
+            }
+        }
+
+        /*         &-6 {
+            background: url("@img/wedding/1.6.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+        }
+        &-7 {
+            background: url("@img/wedding/1.7.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+        }
+        &-8 {
+            background: url("@img/wedding/1.8.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+        }
+        &-9 {
+            background: url("@img/wedding/1.9.jpg") var(--bX) var(--bY);
+            background-size: 480px 250px;
+        } */
+    }
+}
+
+.gridActive {
+    transition: none;
+}

@@ -1,0 +1,45 @@
+@import 'fonts'; 
+@import 'animate';
+@import 'base/variables';
+@import 'base/mixins';
+
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/logo';
+@import 'blocks/menu';
+@import 'blocks/videos';
+@import 'blocks/overlay';
+@import 'blocks/promo';
+@import 'blocks/descr';
+@import 'blocks/contacts';
+@import 'blocks/wedding';
+@import 'blocks/burger';
+@import 'blocks/about';
+
+
+@import 'blocks/media';
+
+
+
+
+
+
+
+
+
+
+
+

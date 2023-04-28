@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head-kz.html')
+<body>
+
+    @@include('html/menu-kz.html')
+
+    <section class="promo">
+        <video poster="@img/poster.webp" autoplay muted loop preload="auto" class="promo__video">
+            <source type="video/webm" src="files/promo.webm">
+            <source type="video/mp4" src="files/promo.mp4">
+        </video>
+    </section>
+
+    <section class="descr">
+        <div class="container">
+            <div class="descr__text animate__animated animate__fadeInUp">
+                Мен үшін әрбір жұп, әрбір тұлға ерекше. Әрқайсысының өзіндік ешкімге айтылмаған құпиясы бар. Мен видеоларымда жасандылықсыз, жалған сюжетсіз, шынайы сезімдерді бере отырып сіздің тұлғалығыңызды, ерекшелігіңізді айқындап аша түскім келеді. Өмір сәттерден тұрады. Сол сәтте қандай шынайылық, қанша эмоция, ерекше атмосфера. Мен осы күйді бұзбай жеткізуге тырысамын. 
+            </div>
+        </div>
+    </section>
+
+    <section class="videos">
+        <div class="container">
+            <div id="trailer">
+                    <svg viewBox="0 0 15 15" width="5" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 8L0 16V0L14 8Z" fill="#FFFF"/>
+                    </svg>
+            </div>
+
+            <div class="videos__wrapper">
+                <div class="interactable videos__wrapper-item videos__wrapper-item_1" data-url="T4Y-9f54MjQ"></div>
+                <div class="interactable videos__wrapper-item videos__wrapper-item_2" data-url="S985alXUwns"></div>
+                <div class="interactable videos__wrapper-item videos__wrapper-item_3" data-url="eSmChOZqbko"></div>
+                <div class="interactable videos__wrapper-item videos__wrapper-item_4" data-url="crsi4gqQREE"></div>
+                <div class="interactable videos__wrapper-item videos__wrapper-item_5" data-url="rf4a98CwEU0"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__title">Байланыс</div>
+            <div class="contacts__text">
+                Сіздің қоңырауыңызды асыға күтемін
+            </div>
+            
+            <div class="contacts__wrapper">
+                <a class="contacts__links contacts__links-call" href="tel:+77475060993">
+                    <img src="@img/icons/phone.svg" alt="phone">
+                    <div>+7 747 506 09 93</div>
+                </a>
+
+                <a class="contacts__links contacts__links-whatsapp" href="https://wa.me/77475060993" target="_blank">
+                    <img src="@img/icons/whatsapp.svg" alt="phone">
+                    <div>Whatsapp-қа жазу</div>
+                </a>
+            </div>
+
+            <a href="https://www.instagram.com/ernar.toleubek/" target="_blank" class="contacts__instagram">
+                <img src="@img/icons/instagram.svg" alt="instagram">
+            </a >
+            <div class="contacts__look">Өмір сәттерден тұрады, біз сол сәттерде өмір сүреміз!</div>
+        </div>
+    </section>
+
+
+
+    <div class="overlay">
+        <div class="video">
+            <div id="frame"></div>
+            <div class="close">&times;</div>
+        </div>
+    </div>
+    
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.videos {
+    margin-top: 25px;
+    padding: 25px 0 50px 0;
+    #trailer {
+        height: 20px;
+        width: 20px;
+        background-color: grey;
+        border-radius: 20px;
+        
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 10000;
+        
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 500ms ease;
+        
+        display: grid;
+        place-items: center;
+
+    }
+    &:hover {
+        #trailer{
+            opacity: 1;
+        }
+    }
+    .interactable {
+        background-size: 100%;  
+        transition: background-size 400ms ease, opacity 400ms ease;
+    }
+    .interactable:hover {
+        background-size: 105%;
+        opacity: 0.9;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 165px);
+        justify-content: center;
+        column-gap: 30px;
+        &-item {
+            width: 165px;
+            height: 277px;
+            border-radius: 8px;
+            &_1 {
+                background: url('@img/1.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &_2 {
+                background: url('@img/2.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &_3 {
+                background: url('@img/3.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &_4 {
+                background: url('@img/4.jpg') center center no-repeat;
+                background-size: cover;
+            }
+            &_5 {
+                background: url('@img/5.jpg') center center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

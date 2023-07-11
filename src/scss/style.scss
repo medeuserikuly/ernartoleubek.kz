@@ -17,6 +17,9 @@
     margin: 0 auto;
 }
 
+.mobile {
+    display: none;
+}
 
 @import 'blocks/logo';
 @import 'blocks/menu';
@@ -28,6 +31,8 @@
 @import 'blocks/wedding';
 @import 'blocks/burger';
 @import 'blocks/about';
+@import 'blocks/mobile';
+@import 'blocks/whatsapp';
 
 
 @import 'blocks/media';

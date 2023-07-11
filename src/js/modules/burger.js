@@ -4,9 +4,9 @@ const burger = () => {
   const menuToggle = document.querySelector('.nav__toggle');
   let isMenuOpen = false;
   
-  if (screen.width < 577) {
-    document.querySelector('.viewport').style.display = 'block';
-  }
+  // if (screen.width < 577) {
+  //   document.querySelector('.viewport').style.display = 'block';
+  // }
   // TOGGLE MENU ACTIVE STATE
   menuToggle.addEventListener('click', e => {
     e.preventDefault();

@@ -2,9 +2,12 @@ import AnimateByScroll from "./modules/animateByScroll.js";
 import burger from "./modules/burger.js";
 import * as func from "./modules/functions.js";
 import Menu from "./modules/menu.js";
+import mobileVideoPlayer from "./modules/mobileVideoPlayer.js";
 import ParallaxTiltEffect from "./modules/parallaxEffect.js";
 import Trailer from "./modules/trailer.js";
-import VidePlayer from "./modules/videoPlayer.js";
+import VideoPlayer from "./modules/videoPlayer.js";
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -13,11 +16,15 @@ window.addEventListener('DOMContentLoaded', () => {
     new Menu('.menu__link').init();
     new Trailer('trailer').init();
 
-    new VidePlayer('.videos__wrapper-item', '.overlay').init();
-    new VidePlayer('.grid__item', '.overlay').init();
-
+    new VideoPlayer('.videos__wrapper-item', '.overlay').init();
+    new VideoPlayer('.grid__item', '.overlay').init();
 
     new AnimateByScroll('.contacts').init();
+
+    const whatsapp = document.querySelector('.pulse-button');
+    whatsapp.addEventListener('click', () => {
+        open("https://wa.me/77475060993");
+    });
     
     new ParallaxTiltEffect({
       element: ".grid__wrapper-1",
@@ -63,5 +70,4 @@ window.addEventListener('DOMContentLoaded', () => {
         element: ".grid__wrapper-9",
         tiltEffect: "reverse"
     });
-
 });

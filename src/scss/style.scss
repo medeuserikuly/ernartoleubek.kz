@@ -20,6 +20,9 @@
 .mobile {
     display: none;
 }
+.link__main {
+    display: none;
+}
 
 @import 'blocks/logo';
 @import 'blocks/menu';
@@ -33,6 +36,7 @@
 @import 'blocks/about';
 @import 'blocks/mobile';
 @import 'blocks/whatsapp';
+@import 'blocks/price';
 
 
 @import 'blocks/media';

@@ -33,9 +33,6 @@ export default class AnimateByScroll {
         this.animOnScroll();
         window.addEventListener('scroll', () => {
             this.animOnScroll();
-    
-            
-    
         });
     }
 }

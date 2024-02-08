@@ -171,9 +171,37 @@
             height: 150px;
         }
     }
+
+    // Price
+
+    .price {
+        &__title {
+            margin-top: 40px;
+        }
+        &__wrapper {
+            justify-content: center;
+            margin-top: 20px;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+        &__additionally {
+            margin-bottom: 50px;
+			&_title {
+                font-size: 18px;
+            }
+			&_descr {
+                font-size: 15px;
+            }
+        }
+}
+
 }
 
 @media (max-width: 576px) {
+    .link__main {
+        display: block;
+    }
     .container {
         width: 100%;
         padding: 0 20px;

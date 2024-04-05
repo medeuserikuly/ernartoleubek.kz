@@ -1035,8 +1035,12 @@
 
 .price__item_price {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
+}
+
+.price__item_price span {
+  font-weight: 500;
 }
 
 .price__additionally {

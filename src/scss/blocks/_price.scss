@@ -44,8 +44,11 @@
         // .price__item_price
         &_price {
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 300;
+            span {
+                font-weight: 500;
+            }
         }
     }
 
